@@ -28,7 +28,7 @@ public class PreferensiBerita extends AppCompatActivity {
         recyclerView = findViewById(R.id.reycle_view);
         recyclerView.setHasFixedSize(true);
 
-       // list.addAll(DataBerita.getListData());
+        list.addAll(DataBerita.getListData());
         showRecyclerList();
 
         Intent intent = getIntent();
