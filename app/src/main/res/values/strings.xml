@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">News-in.com</string>
+    <string-array name="labels_array">
+        <item>Sport</item>
+        <item>Games</item>
+        <item>Teknologi</item>
+    </string-array>
+</resources>
