@@ -6,30 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".DetailBerita">
 
-    <TextView
-        android:id="@+id/judul"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/gambar_berita"
-        android:layout_centerHorizontal="true"
-        android:layout_marginEnd="30dp"
-        android:paddingTop="20dp"
-        android:text="Judul Berita"
-        android:textColor="@color/black"
-        android:textSize="30sp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/author"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/judul"
-        android:layout_centerHorizontal="true"
-        android:paddingBottom="20dp"
-        android:text="authors"
-        android:textColor="@color/black"
-        android:textSize="15sp" />
-
     <ImageView
         android:id="@+id/gambar_berita"
         android:layout_width="match_parent"
@@ -40,12 +16,39 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/author">
+        android:layout_below="@id/gambar_berita">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/judul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gambar_berita"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:paddingTop="20dp"
+                android:text="Judul Berita"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/judul"
+                android:layout_gravity="center"
+                android:paddingTop="10dp"
+                android:paddingBottom="20dp"
+                android:text="authors"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
 
             <TextView
                 android:id="@+id/isi_berita"
@@ -55,7 +58,7 @@
                 android:paddingTop="20dp"
                 android:paddingRight="20dp"
                 android:text="Isi berita"
-                android:textAlignment="center"
+                android:textAlignment="textStart"
                 android:textColor="@color/black"
                 android:textSize="15sp" />
 

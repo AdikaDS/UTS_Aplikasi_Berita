@@ -12,9 +12,9 @@ public class DataBerita {
     };
 
     private static String[] authSports = {
-            "author : Muhammad Rizal",
-            "author : Liputan6.com",
-            "author : Zainul Arifin"
+            "Author : Muhammad Rizal",
+            "Author : Liputan6.com",
+            "Author : Zainul Arifin"
     };
 
     private static String[] detailSports = {
@@ -53,9 +53,9 @@ public class DataBerita {
     };
 
     private static String[] authSportsLow = {
-            "author : Yulianto",
-            "author : Defri Saefullah",
-            "author : Muhammad Yanto"
+            "Author : Yulianto",
+            "Author : Defri Saefullah",
+            "Author : Muhammad Yanto"
     };
 
     private static String[] detailSportsLow = {
@@ -92,9 +92,9 @@ public class DataBerita {
     };
 
     private static String[] authGames = {
-            "author : Iskandar",
-            "author : Giovani Dio Prasasti",
-            "author : Giovani Dio Prasasti"
+            "Author : Iskandar",
+            "Author : Giovani Dio Prasasti",
+            "Author : Giovani Dio Prasasti"
 
     };
 
@@ -141,9 +141,9 @@ public class DataBerita {
     };
 
     private static String[] authGamesLow = {
-            "author : Giovani Dio Prasasti",
-            "author : Agustinus Mario Damar",
-            "author : Agustinus Mario Damar"
+            "Author : Giovani Dio Prasasti",
+            "Author : Agustinus Mario Damar",
+            "Author : Agustinus Mario Damar"
     };
 
     private static String[] detailGamesLow = {
@@ -184,18 +184,33 @@ public class DataBerita {
     // Teknologi
     private static String[] titleTeknologi = {
             "Teleskop James Webb Abadikan Cincin Debu yang Mengelilingi Dua Bintang Langka",
-            "Teleskop James Webb Abadikan Cincin Debu yang Mengelilingi Dua Bintang Langka",
-            "Teleskop James Webb Abadikan Cincin Debu yang Mengelilingi Dua Bintang Langka"
+            "Top 3 Tekno: Pencurian Data Pelanggan 2K Games Jadi Sorotan",
+            "Saingan Metaverse, CEO Meta Mark Zuckerberg: Ekosistem Apple Tertutup"
     };
 
     private static String[] authTeknologi = {
-            "author","author","author"
+            "Author : Iskandar",
+            "Author : Iskandar",
+            "Author : Giovani Dio Prasasti"
     };
 
     private static String[] detailTeknologi = {
-            "Teleskop James Webb Abadikan Cincin Debu yang Mengelilingi Dua Bintang Langka",
-            "Teleskop James Webb Abadikan Cincin Debu yang Mengelilingi Dua Bintang Langka",
-            "Teleskop James Webb Abadikan Cincin Debu yang Mengelilingi Dua Bintang Langka"
+            "Teleskop James Webb menangkap gambar cincin debu berpola cantik di sekitar dua bintang yang dapat melacak perjalanan waktu, mirip dengan pola cincin di bagian dalam batang pohon.\n" +
+                    "Gambar tersebut, yang dirinci oleh Badan Antariksa Eropa dan Laboratorium Propulsi Jet (Jet Propulsion Laboratory/JPL) NASA, menunjukkan pola 17 cincin konsentris yang terdiri dari partikel debu mengelilingi dua bintang (dikenal sebagai Wolf-Rayet 140).\n" +
+                    "Menurut JPL, bintang Wolf-Rayet dianggap langka (bintang langka) di galaksi kita, dan sejauh ini hanya 600 yang telah ditemukan. Demikian sebagaimana dikutip dari Engadget, Jumat (1310/2022).\n" +
+                    "Wolf-Rayet 140 juga satu-satunya sistem yang ditemukan memiliki pola cincin jenis ini, karena bentuk orbitnya yang aneh alias memanjang.\n" +
+                    "Cincin itu sebagian dari reaksi yang terjadi ketika kedua bintang saling berdekatan, setiap delapan tahun sekali, membentuk semacam 'sidik jari' di sekitar bintang.",
+            "Publisher 2K Games memastikan ada sejumlah data pelanggannya yang dicuri hacker. Berita ini menjadi sorotan para pembaca di kanal Tekno Liputan6.com, Rabu (12/10/2022).\n" +
+                    "Informasi lain yang juga populer datang dari Apple yang menggulirkan versi terbaru iOS 16 untuk para pengguna iPhone, yaitu iOS 16.0.3.\n" +
+                    "1. 2K Games Benarkan Data Pelanggan Dicuri Hacker, Bakal Dijual Online\n\n" +
+                    "Bulan lalu, publisher 2K Games mengumumkan ada hacker yang telah menyusup ke platform help desk mereka secara ilegal. Peretas tersebut memanfaatkan platform help desk 2K Games untuk mengirimkan tautan berbahaya ke pelanggan.\n" +
+                    "Setelah informasi mengenai dampak serangan tersebut belum dipastikan, dari laporan terbaru VGC, 2K Games memastikan ada sejumlah pelanggan yang terdampak.",
+            "Setelah informasi mengenai dampak serangan tersebut belum dipastikan, dari laporan terbaru VGC, 2K Games memastikan ada sejumlah pelanggan yang terdampak.\n" +
+                    "Dalam Meta Connect dan wawancara dengan The Verge, pendiri Facebook itu mengatakan platform virtual reality (VR) Apple akan memiliki ekosistem yang tertutup, dibandingkan dengan ekosistem milik Meta yang terbuka.\n" +
+                    "\"Ekosistem tertutup fokus pada kontrol dan integrasi yang ketat untuk menciptakan pengalaman unik dan penguncian… meskipun sebagian besar nilai akhirnya mengalir ke platform seiring waktu,\" kata Zuckerberg.\n" +
+                    "Dikutip dari The Verge, Kamis (13/10/2022), Zuckerberg menyebut dengan ekosistem terbuka, akan ada lebih banyak orang dan perusahaan, yang dapat membagikan \"kelebihan dari apa yang dibuat.\"\n" +
+                    "Zuckerberg menambahkan, Apple bisa merugikan platform VR lainnya jika memiliki kontrol yang sama besar atas headset-nya seperti halnya pada Mac dan iPhone."
+
     };
 
     private static int[] imageTeknologi = {
@@ -206,19 +221,33 @@ public class DataBerita {
 
     // Teknologi Low
     private static String[] titleTeknologiLow = {
-            "Teleskop James Webb Abadikan Cincin Debu yang Mengelilingi Dua Bintang Langka",
-            "Teleskop James Webb Abadikan Cincin Debu yang Mengelilingi Dua Bintang Langka",
-            "Teleskop James Webb Abadikan Cincin Debu yang Mengelilingi Dua Bintang Langka"
+            "Zuckerberg menambahkan, Apple bisa merugikan platform VR lainnya jika memiliki kontrol yang sama besar atas headset-nya seperti halnya pada Mac dan iPhone.",
+            "Rusia Cap Meta Sebagai Organisasi Teroris dan Ekstremis",
+            "Tom Cruise Bakal Jadi Warga Sipil Pertama yang Spacewalk di Stasiun Antariksa Internasional"
     };
 
     private static String[] authTeknologiLow = {
-            "author","author","author"
+            "Author : Iskandar",
+            "Author : Yulianson",
+            "Author : Yulianson"
     };
 
     private static String[] detailTeknologiLow = {
-            "Teleskop James Webb Abadikan Cincin Debu yang Mengelilingi Dua Bintang Langka",
-            "Teleskop James Webb Abadikan Cincin Debu yang Mengelilingi Dua Bintang Langka",
-            "Teleskop James Webb Abadikan Cincin Debu yang Mengelilingi Dua Bintang Langka"
+            "Pada edisi bulan Oktober yang berkaitan dengan Halloween, NASA dengan tepat mengganti nama akun Twitter exoplanet-nya menjadi \"hexoplanets\", yang menyuguhkan segala macam kengerian luar angkasa.\n" +
+                    "NASA mengungkapkan beberapa hal paling mengerikan dari alam semesta. Salah satunya adalah planet ekstrasurya (exoplanet) yang disebut HD 189733b.\n" +
+                    "Awan di sekitar planet itu dipenuhi pecahan kaca yang mematikan. Material itu secara brutal akan mengiris manusia berkeping-keping ketika ada badai kolosal berkecepatan 5.400mph.\n" +
+                    "\"Itu sangat mematikan, menimbulkan sejuta luka di planet slasher ini!,\" kata NASA sebagaimana dikutip dari The Sun, Kamis (13/10/2022).\n" +
+                    "Mereka juga membicarakan tentang hal lain yang disebut HD 209458b.\n" +
+                    "Lalu ada WASP-79b, planet super panas raksasa yang jaraknya 780 tahun cahaya. Planet paling menakutkan ini memiliki kelembaban beruap, awan yang tersebar, langit kuning, dan hujan besi.",
+            "Meta, perusahaan induk Facebook bentukan Mark Zuckerberg disebut-sebut masuk ke dalam daftar buku hitam pemerintah Rusia.\n" +
+                    "Adalah Rosfinmonitoring, Layanan Pemantauan Keuangan Federal Rusia yang memasukkan pemilik Facebook, Instagram, dan WhatsApp ini ke dalam daftar teroris dan ekstremis.\n" +
+                    "Diketahui, Meta pertama kali ditetapkan sebagai organisasi teroris untuk pertama kalinya oleh Rusia pada Maret 2022.\n" +
+                    "Kala itu, pengadilan Moskow mengklaim platform media sosial populer di dunia ini menjadi tempat beredarnya informasi hoaks.\n" +
+                    "Sebulan kemudian, Mark Zuckerberg menjadi salah satu petinggi teknologi yang dilarang masuk Rusia karena dianggap mempromosikan paham \"Russophobia\".\n",
+            "Tom Cruise, aktor Hollywood ini akan menjadi orang sipil pertama yang berjalan atau spacewalk di luar stasiun antariksa internasional (ISS, International Space Station).\n" +
+                    "Diketahui, aksi aktor berumur 60 ini merupakan bagian dari stunt dimana dia bakal bergantung di luar stasiun luar angkasa ketika mengorbit di atas Bumi pada ketinggian 408 kilometer.\n" +
+                    "Bagi kamu yang suka menonton film karya Tom Cruise, pasti sudah tidak asing lagi dengan deretan film penuh aksi stunt mendebarkan yang dia lakukan sendiri.\n" +
+                    "Yup, Tom Cruise memang dikenal sebagai aktor pemberani dan nekat yang melakukan aksi stunt tanpa bantuan stuntman atau pemeran pengganti ahli."
     };
 
     private static int[] imageTeknologiLow = {
@@ -229,7 +258,7 @@ public class DataBerita {
 
     static ArrayList<BeritaListItem> getListDataSports() {
         ArrayList<BeritaListItem> list = new ArrayList<>();
-        for (int position = 3; position < titleSports.length; position++) {
+        for (int position = 0; position < titleSports.length; position++) {
             BeritaListItem news = new BeritaListItem();
             news.setJudulBerita(titleSports[position]);
             news.setAuthors(authSports[position]);
@@ -255,7 +284,7 @@ public class DataBerita {
 
     static ArrayList<BeritaListItem> getListDataGames() {
         ArrayList<BeritaListItem> list = new ArrayList<>();
-        for (int position = 3; position < titleGames.length; position++) {
+        for (int position = 0; position < titleGames.length; position++) {
             BeritaListItem news = new BeritaListItem();
             news.setJudulBerita(titleGames[position]);
             news.setAuthors(authGames[position]);
@@ -281,7 +310,7 @@ public class DataBerita {
 
     static ArrayList<BeritaListItem> getListDataTeknologi() {
         ArrayList<BeritaListItem> list = new ArrayList<>();
-        for (int position = 3; position < titleTeknologi.length; position++) {
+        for (int position = 0; position < titleTeknologi.length; position++) {
             BeritaListItem news = new BeritaListItem();
             news.setJudulBerita(titleTeknologi[position]);
             news.setAuthors(authTeknologi[position]);

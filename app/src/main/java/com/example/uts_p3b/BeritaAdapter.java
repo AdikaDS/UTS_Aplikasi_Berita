@@ -44,7 +44,6 @@ public class BeritaAdapter extends RecyclerView.Adapter<BeritaAdapter.BeritaView
 
         holder.tvJudulBerita.setText(news.getJudulBerita());
         holder.tvAuthor.setText(news.getAuthors());
-        holder.tvIsiBerita.setText(news.getIsi());
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -71,14 +70,13 @@ public class BeritaAdapter extends RecyclerView.Adapter<BeritaAdapter.BeritaView
     public class BeritaViewHolder extends RecyclerView.ViewHolder {
 
         ImageView imgBerita;
-        TextView tvJudulBerita, tvAuthor, tvIsiBerita;
+        TextView tvJudulBerita, tvAuthor;
 
         public BeritaViewHolder(@NonNull View itemView) {
             super(itemView);
             imgBerita = itemView.findViewById(R.id.gambar_news);
             tvJudulBerita = itemView.findViewById(R.id.judul_news);
             tvAuthor = itemView.findViewById(R.id.pengetik);
-            tvIsiBerita = itemView.findViewById(R.id.isi_news);
         }
     }
 }

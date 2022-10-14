@@ -13,7 +13,7 @@ import java.util.Objects;
 
 public class PreferensiBerita extends AppCompatActivity {
 
-    TextView tglLahir, hasilCategory;
+    TextView hasilCategory;
     RecyclerView recyclerView;
     ArrayList<BeritaListItem> list = new ArrayList<>();
 
@@ -21,16 +21,12 @@ public class PreferensiBerita extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_preferensi_berita);
-
-        tglLahir = findViewById(R.id.tanggal_lahir);
         hasilCategory = findViewById(R.id.hasilKategori);
 
         recyclerView = findViewById(R.id.reycle_view);
 
         Intent intent = getIntent();
         int ageData = intent.getIntExtra("kodeUmur", 1);
-        String tgl = intent.getStringExtra("tgl");
-        tglLahir.setText(tgl);
 
         String category = intent.getStringExtra("cate");
         hasilCategory.setText(category);
