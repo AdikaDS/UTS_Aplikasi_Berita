@@ -6,14 +6,14 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.MenuItem;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class PreferensiBerita extends AppCompatActivity {
 
-    TextView hasilUmur, hasilCategory;
+    TextView tglLahir, hasilCategory;
     RecyclerView recyclerView;
     ArrayList<BeritaListItem> list = new ArrayList<>();
 
@@ -22,21 +22,36 @@ public class PreferensiBerita extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_preferensi_berita);
 
-        hasilUmur = findViewById(R.id.hasil_umur);
+        tglLahir = findViewById(R.id.tanggal_lahir);
         hasilCategory = findViewById(R.id.hasilKategori);
 
         recyclerView = findViewById(R.id.reycle_view);
-        recyclerView.setHasFixedSize(true);
-
-        list.addAll(DataBerita.getListData());
-        showRecyclerList();
 
         Intent intent = getIntent();
-        String checkIn = intent.getStringExtra("age");
-        hasilUmur.setText(checkIn);
+        int ageData = intent.getIntExtra("kodeUmur", 1);
+        String tgl = intent.getStringExtra("tgl");
+        tglLahir.setText(tgl);
 
-        String checkOut = intent.getStringExtra("cate");
-        hasilCategory.setText(checkOut);
+        String category = intent.getStringExtra("cate");
+        hasilCategory.setText(category);
+
+        if(Objects.equals(category, "Sport") && ageData < 17){
+            list.addAll(DataBerita.getListDataSportsLow());
+        } else if(Objects.equals(category, "Sport") && ageData >= 17){
+            list.addAll(DataBerita.getListDataSports());
+            list.addAll(DataBerita.getListDataSportsLow());
+        } else if (Objects.equals(category, "Games") && ageData >= 17 ){
+            list.addAll(DataBerita.getListDataGames());
+            list.addAll(DataBerita.getListDataGamesLow());
+        }else if (Objects.equals(category, "Games") && ageData < 17){
+            list.addAll(DataBerita.getListDataGamesLow());
+        } else if (Objects.equals(category, "Teknologi") && ageData >= 17 ){
+            list.addAll(DataBerita.getListDataTeknologi());
+            list.addAll(DataBerita.getListDataTeknologiLow());
+        }else if (Objects.equals(category, "Teknologi") && ageData < 17){
+            list.addAll(DataBerita.getListDataTeknologiLow());
+        }
+        showRecyclerList();
 
     }
 

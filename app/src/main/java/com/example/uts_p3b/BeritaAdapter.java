@@ -13,13 +13,14 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
 
 import java.util.ArrayList;
 
 public class BeritaAdapter extends RecyclerView.Adapter<BeritaAdapter.BeritaViewHolder> {
 
-    ArrayList<BeritaListItem> listBerita;
-    Context context;
+   final ArrayList<BeritaListItem> listBerita;
 
     public BeritaAdapter(ArrayList<BeritaListItem> list) {
         this.listBerita = list;
@@ -36,6 +37,10 @@ public class BeritaAdapter extends RecyclerView.Adapter<BeritaAdapter.BeritaView
     @Override
     public void onBindViewHolder(@NonNull BeritaAdapter.BeritaViewHolder holder, int position) {
         final BeritaListItem news = listBerita.get(position);
+        Glide.with(holder.itemView.getContext())
+                .load(news.getGambarBerita())
+                .apply(new RequestOptions().override(110, 110))
+                .into(holder.imgBerita);
 
         holder.tvJudulBerita.setText(news.getJudulBerita());
         holder.tvAuthor.setText(news.getAuthors());
@@ -45,15 +50,15 @@ public class BeritaAdapter extends RecyclerView.Adapter<BeritaAdapter.BeritaView
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(context, DetailBerita.class);
+                Intent intent = new Intent(v.getContext(), DetailBerita.class);
                 Bundle bundle = new Bundle();
 
                 bundle.putString("title", news.getJudulBerita());
                 bundle.putString("author", news.getAuthors());
-                bundle.putString("isi", news.getIsi());
+                bundle.putString("detail", news.getIsi());
                 bundle.putInt("picture", news.getGambarBerita());
                 intent.putExtras(bundle);
-                context.startActivity(intent);
+                v.getContext().startActivity(intent);
             }
         });
     }
@@ -70,11 +75,10 @@ public class BeritaAdapter extends RecyclerView.Adapter<BeritaAdapter.BeritaView
 
         public BeritaViewHolder(@NonNull View itemView) {
             super(itemView);
-            context = itemView.getContext();
-            imgBerita = itemView.findViewById(R.id.gambar_berita);
-            tvJudulBerita = itemView.findViewById(R.id.judul);
-            tvAuthor = itemView.findViewById(R.id.author);
-            tvIsiBerita = itemView.findViewById(R.id.isi_berita);
+            imgBerita = itemView.findViewById(R.id.gambar_news);
+            tvJudulBerita = itemView.findViewById(R.id.judul_news);
+            tvAuthor = itemView.findViewById(R.id.pengetik);
+            tvIsiBerita = itemView.findViewById(R.id.isi_news);
         }
     }
 }

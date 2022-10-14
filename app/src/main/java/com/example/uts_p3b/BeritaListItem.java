@@ -7,13 +7,6 @@ public class BeritaListItem {
     private String isi;
     private int gambarBerita;
 
-    public BeritaListItem(String judulBerita, String authors, String isi, int gambarBerita) {
-        this.judulBerita = judulBerita;
-        this.authors = authors;
-        this.isi = isi;
-        this.gambarBerita = gambarBerita;
-    }
-
     public String getJudulBerita() {
         return judulBerita;
     }

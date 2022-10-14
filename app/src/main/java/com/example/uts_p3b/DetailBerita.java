@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
 
 
 public class DetailBerita extends AppCompatActivity {
@@ -35,6 +37,10 @@ public class DetailBerita extends AppCompatActivity {
         author.setText(txtAuthor);
         detailBerita.setText(txtDetail);
 
+        Glide.with(DetailBerita.this)
+                .load(img_photo)
+                .apply(new RequestOptions().override(370,370))
+                .into(img);
 
     }
 }
